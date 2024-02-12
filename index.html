@@ -1,3 +1,10 @@
+<!--
+Name: Robert Macklem
+File: index.html
+Date: 12 February 2024
+A splash page for Mozilla following the MDN exercises.
+-->
+
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
@@ -99,14 +106,21 @@
   <body>
     <header>
       <h1>Mozilla</h1>
-      <!-- insert <img> element, link to the small
-          version of the Firefox logo -->
+      <img src="firefoxlogo120.png" alt="Firefox Logo" />
 
     </header>
 
     <main>
       <article>
-        <!-- insert iframe from youtube -->
+        <iframe 
+          width="560" 
+          height="315" 
+          src="https://www.youtube.com/embed/ojcNcvb1olg?si=3r9Ljk7SXLC_KDRd" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen>
+        </iframe>
 
         <h2>Rocking the free web</h2>
 
@@ -116,18 +130,35 @@
       </article>
 
       <div class="further-info">
-        <!-- insert images with srcsets and sizes -->
         <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img>
+          <img
+            srcset="firefoxlogo120.png 120w, firefoxlogo400.png 400w"
+            sizes="(max-width: 500px) 1200px,
+                  400px"
+            src="firefoxlogo400.png"
+            alt="Firefox Logo" />
         </a>
         <a href="https://www.mozilla.org/">
-          <img>
+          <img
+            srcset="mozilla-dinosaur-head120.png 120w, mozilla-dinosaur-head400.png 400w"
+            sizes="(max-width: 500px) 120px,
+                  400px"
+            src="mozilla-dinosaur-head400.png"
+            alt="Mozilla Dinosaur" />        
         </a>
         <a href="https://addons.mozilla.org/">
-          <img>
+          <img
+            srcset="firefoxaddons120.jpg 120w, firefoxaddons400.jpg 400w"
+            sizes="(max-width: 500px) 120px,
+                  400px"
+            src="firefoxaddons400.jpg"
+            alt="Firefox Addons" />        
         </a>
         <a href="https://developer.mozilla.org/en-US/">
-          <img>
+          <img
+            src="mdn.svg"
+            alt="Mozilla Developer Network"
+            width="400" />
         </a>
         <div class="clearfix"></div>
       </div>
