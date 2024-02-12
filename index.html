@@ -106,7 +106,7 @@ A splash page for Mozilla following the MDN exercises.
   <body>
     <header>
       <h1>Mozilla</h1>
-      <img src="firefoxlogo120.png" alt="Firefox Logo" />
+      <img src="firefoxlogo120.png" alt="Firefox Logo">
 
     </header>
 
@@ -117,7 +117,6 @@ A splash page for Mozilla following the MDN exercises.
           height="315" 
           src="https://www.youtube.com/embed/ojcNcvb1olg?si=3r9Ljk7SXLC_KDRd" 
           title="YouTube video player" 
-          frameborder="0" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
           allowfullscreen>
         </iframe>
@@ -136,7 +135,7 @@ A splash page for Mozilla following the MDN exercises.
             sizes="(max-width: 500px) 1200px,
                   400px"
             src="firefoxlogo400.png"
-            alt="Firefox Logo" />
+            alt="Firefox Logo">
         </a>
         <a href="https://www.mozilla.org/">
           <img
@@ -144,7 +143,7 @@ A splash page for Mozilla following the MDN exercises.
             sizes="(max-width: 500px) 120px,
                   400px"
             src="mozilla-dinosaur-head400.png"
-            alt="Mozilla Dinosaur" />        
+            alt="Mozilla Dinosaur">        
         </a>
         <a href="https://addons.mozilla.org/">
           <img
@@ -152,19 +151,23 @@ A splash page for Mozilla following the MDN exercises.
             sizes="(max-width: 500px) 120px,
                   400px"
             src="firefoxaddons400.jpg"
-            alt="Firefox Addons" />        
+            alt="Firefox Addons">        
         </a>
         <a href="https://developer.mozilla.org/en-US/">
           <img
             src="mdn.svg"
             alt="Mozilla Developer Network"
-            width="400" />
+            width="400">
         </a>
         <div class="clearfix"></div>
       </div>
 
       <div class="red-panda">
-        <!-- insert picture element -->
+        <picture>
+          <source media="(max-width: 600px)" srcset="red-panda600.jpg">
+          <source media="(min-width: 601px)" srcset="red-panda1200.jpg">
+          <img src="red-panda1200.jpg" alt="A red panda related to Mozilla">
+        </picture>
       </div>
 
     </main>
